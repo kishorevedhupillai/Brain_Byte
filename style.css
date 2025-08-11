@@ -1,0 +1,35 @@
+/* Animated gradient background */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+    text-align: center;
+    /* Animation */
+    background: linear-gradient(270deg, #b224b7, #c736b8);
+    background-size: 400% 400%;
+    animation: blueAnimation 8s ease infinite;
+}
+
+
+/* Animation keyframes */
+
+@keyframes blueAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+header {
+    padding: 20px;
+}
+
+main {
+    padding: 20px;
+}
